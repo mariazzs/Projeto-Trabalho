@@ -1,4 +1,12 @@
 /* Fundo apenas para exemplo */
+.header {
+  color: white;
+  text-align: center;
+  padding: 20px;
+
+  
+}
+
 body {
   margin: 0;
   min-height: 100vh;
@@ -11,7 +19,7 @@ body {
 .menu {
   position: absolute;
 
-  top: 20px;
+  top: 100px;
   left: 50%;
   transform: translateX(-50%);
 
@@ -24,7 +32,7 @@ body {
 
   background: rgba(247, 243, 243, 0.12);
 
-  backdrop-filter: blur(0px);
+  backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(15px);
 
   border: 1px solid rgba(255, 255, 255, 0.25);
@@ -73,7 +81,7 @@ html {
 
   background: rgba(250, 247, 247, 0.12);
 
-  backdrop-filter: blur(0px);
+  backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(15px);
 
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -139,4 +147,38 @@ section h2:hover::after {
   color: white;
   text-align: center;
   padding: var(--spacing);
+}
+
+.habilidades {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.habilidades li {
+    background: rgba(255, 255, 255, 0.12);
+    color: white;
+
+    padding: 12px 20px;
+    border-radius: 30px;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.habilidades li:hover {
+    transform: translateY(-5px) scale(1.05);
+
+    background: rgba(255, 255, 255, 0.2);
+
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
 }
